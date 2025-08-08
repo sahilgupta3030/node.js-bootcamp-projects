@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google OAuth2 Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div
+      class="bg-white border border-gray-200 rounded-3xl shadow-xl p-8 max-w-md w-full text-center space-y-6"
+    >
+      <h1 class="text-3xl font-bold text-gray-800">
+        Google OAuth2.0 Authentication Demo
+      </h1>
+      <p class="text-gray-600 text-sm">
+        Access secret content after logging in with Google.
+      </p>
+
+      <div class="flex flex-col space-y-3">
+        <a
+          href="/auth/google"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition"
+        >
+          Login with Google
+        </a>
+        <a
+          href="/secret"
+          class="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-full transition"
+        >
+          Access Secret
+        </a>
+        <a
+          href="/auth/logout"
+          class="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-full transition"
+        >
+          Logout
+        </a>
+      </div>
+
+      <footer class="text-xs text-gray-400 pt-4">
+        Built with Node.js, Express & Google OAuth2.0
+      </footer>
+    </div>
+  </body>
+</html>
